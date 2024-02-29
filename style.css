@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@700&family=Cormorant+Garamond:wght@300&family=Mooli&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Comfortaa:wght@700&family=Cormorant+Garamond:wght@300&family=Jacquarda+Bastarda+9&family=Mooli&display=swap');
+
+@media only screen and (max-width: 600px) {
+    /* Add styles for smaller screens */
+    body {
+        font-size: 80%;  
+    }
+
+    nav {
+        font-size: 0.9em; /* Example adjustment for navigation font size */
+        padding: 10px;
+        z-index: 3;
+    }
+
+    .floating-image,
+    .floating-image2 {
+        width: 100%; 
+        margin-bottom: 10px;
+    }
+
+    #white-background {
+        padding: 20px;
+    }
+}
+nav {
+    background-color: lightgoldenrodyellow; 
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration-color: green;
+    margin-bottom: 500px;
+    z-index: 4;
+
+}
+
+.alata-regular {
+    font-family: "Alata", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+li {
+    display: inline-block;
+}
+
+a {
+    font-family: "Jacquarda Bastarda 9", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    display: block;
+    color: green;
+    text-align: center;
+    padding: 8px 12px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+@font-face {
+    font-family: 'Covik Sans Demo'; 
+    src: url('/Users/laurasonzini/Library/Fonts/CovikSansDemo-Regular.otf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+p {
+    font-family: 'Covik Sans Demo', sans-serif; 
+    font-size: 32px;
+    margin: 0;
+    padding-left: 40px;
+    padding-right: 40px;
+    position: relative;
+    margin-top: 100px;
+    z-index: 1; /* Set z-index for the text */
+}
+
+.image-container {
+    position: absolute;
+    bottom: -480px; /* Adjust the distance from the bottom as needed */
+    left: 20%; /* Position at the horizontal center */
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 400px; /* Set a specific width for the image container */
+    height: 400px; /* Set a specific height for the image container */
+    z-index: 2; /* Set z-index for the image */
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Center the image within the container */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.image-container:hover img {
+    transform: rotateY(180deg);
+}
+
+.image-text {
+    position: absolute;
+    text-align: center;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    background: white;
+    color: green;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 1s, color 0.5s;
+    z-index: 3;
+}
+
+
+.image-container:hover .image-text {
+    opacity: 1;
+    color: red;
+    transition: color 0.5;
+}
+#container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  }
+  .back-image {
+    position: absolute;
+    top: -60px; /* Adjust based on your navigation bar height */
+    left: 0;
+    width: 100%;
+    height: auto;
+    margin-top: 200px;
+    z-index: 1; /* Place the background image behind other content */
+}
+
+  .trail-image {
+    position: absolute;
+    width: 240px; /* Adjust the width of the trail images as needed */
+    height: 240px; /* Adjust the height of the trail images as needed */
+    pointer-events: none; /* Ensure trail images do not interfere with mouse events */
+    z-index: 2;
+  }
+  #trail-space {
+    margin-top: 60px; /* Adjust the margin-top to match the height of the nav bar */
+}
+
+.image-container2 {
+    position: absolute;
+    bottom: -1500px; /* Adjust the distance from the bottom as needed */
+    left: 60%; /* Position at the horizontal center */
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 400px; /* Set a specific width for the image container */
+    height: 400px; /* Set a specific height for the image container */
+    z-index: 2; /* Set z-index for the image */
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Center the image within the container */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.image-container2:hover img {
+    transform: rotateY(180deg);
+}
+
+.image-text2 {
+    position: absolute;
+    text-align: center;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    background: white;
+    color: green;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 1s, color 0.5s;
+    z-index: 3;
+}
+
+
+.image-container2:hover .image-text2 {
+    opacity: 1;
+    color: red;
+    transition: color 0.5;
+}
+.image-container3 {
+    position: absolute;
+    bottom: -3500px; /* Adjust the distance from the bottom as needed */
+    left: 60%; /* Position at the horizontal center */
+    transform: translateX(-50%);
+    overflow: hidden;
+    width: 400px; /* Set a specific width for the image container */
+    height: 400px; /* Set a specific height for the image container */
+    z-index: 2; /* Set z-index for the image */
+}
+
+img {
+    display: block;
+    margin: 0 auto; /* Center the image within the container */
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s;
+}
+
+.image-container3:hover img {
+    transform: rotateY(180deg);
+}
+
+.image-text3 {
+    position: absolute;
+    text-align: center;
+    top: 50%; /* Position at the vertical center */
+    left: 50%; /* Position at the horizontal center */
+    transform: translate(-50%, -50%); /* Center the text within the container */
+    background: white;
+    color: green;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 1s, color 0.5s;
+    z-index: 3;
+}
+
+
+.image-container3:hover .image-text2 {
+    opacity: 1;
+    color: red;
+    transition: color 0.5;
+}
+
